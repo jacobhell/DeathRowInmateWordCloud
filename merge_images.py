@@ -58,4 +58,4 @@ for file in files[1:]:
         else:
             image = concatenate_images_v(image, current_h_row)
 
-image.save('merged_image2.png', 'PNG')
+image.save('final_image.png', 'PNG')
