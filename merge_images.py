@@ -39,7 +39,7 @@ for file in files[1:]:
     else:
         current_h_row = concatenate_images_h(current_h_row, next_image)
 
-    if file_number_of_block == 3:
+    if file_number_of_block == 10:
         file_number_of_block = 0
         if image is None:
             image = current_h_row
@@ -58,4 +58,4 @@ for file in files[1:]:
         else:
             image = concatenate_images_v(image, current_h_row)
 
-image.save('final_image.png', 'PNG')
+image.save('DeathRowInmateWordCloud.png', 'PNG')
